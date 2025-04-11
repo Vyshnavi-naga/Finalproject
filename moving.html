@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Images with CSS</title>
+    <style>
+        body {
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .moving-image {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://img.freepik.com/premium-vector/minimal-beauty-typography-logo-design_278222-4950.jpg?semt=ais_hybrid" class="moving-image" style="animation-delay: 0s;" alt="Image 1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmJQBtijqaONaS9Ji8xs_B0xMlLg4HPmD0VQ3-xCcU1iQaQ3F7_hGKI_xrdpsOdf5VDc&usqp=CAU" class="moving-image" style="animation-delay: 1s;" alt="Image 2">
+    <img src="https://globalfashion.by/images/blog/articles/AqdfetA1Mf91pNhdiK3H8rpn9yYNU30IlyIkfCsp.webp" class="moving-image" style="animation-delay: 2s;" alt="Image 3">
+    <img src="https://via.placeholder.com/100/0000FF" class="moving-image" style="animation-delay: 3s;" alt="Image 4">
+</body>
+</html>

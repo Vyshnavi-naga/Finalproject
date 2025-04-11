@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairstyle Tips</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #4b0082;
+            margin: 20px 0;
+        }
+        .tip-card {
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .tip-card:hover {
+            transform: scale(1.05);
+        }
+        .tip-card h5 {
+            color: #ff6f61;
+        }
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b0082;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Go Back Button in Corner</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            /* Style for the button */
+            .corner-button {
+                position: fixed; /* Fix the button in the corner */
+                top: 20px;       /* Distance from the top */
+                right: 20px;     /* Distance from the right */
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            .corner-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+    
+       
+        <!-- Button in the corner -->
+        <button class="corner-button" onclick="goBack()">Go Back</button>
+    
+        <script>
+            // Function to redirect to a specific page
+            function goBack() {
+                // Replace 'your-page-url.html' with the URL you want to redirect to
+                window.location.href = "home.html"; // Change this URL
+            }
+        </script>
+    
+    </body>
+    </html>
+<div class="container mt-5">
+    <h1 class="text-center">Hairstyle Tips</h1>
+    <div class="row">
+        <!-- Hairstyle 1 -->
+        <div class="col-md-4">
+            <div class="tip-card text-center" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://image.wedmegood.com/resized-nw/600X/wp-content/uploads/2018/07/Snapinsta.app_435006320_427217279860247_7000451068960398742_n_1080.jpg"
+                alt="Loose Waves" class="service-img" 
+                    style="width: 100%; height: auto; object-fit: cover;">
+                <div class="p-3">
+                    <h5>Braided Hairstyles</h5>
+                    <p>Braids are a great way to keep your hair neat and stylish.</p>
+                    <button class="btn btn-primary" onclick="showTip('braid')">Show Tips</button>
+                    <div id="braid" class="tips" style="display:none;">
+                        <ul>
+                            <li>Keep your hair clean and tangle-free.</li>
+                            <li>Use hair ties that won’t damage your hair.</li>
+                            <li>Add some hair serum for a shiny look.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hairstyle 2 -->
+        <div class="col-md-4">
+            <div class="tip-card text-center" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://i.pinimg.com/736x/34/02/73/3402733d514b2c133ea333498e15e53d.jpg" 
+                    alt="Loose Waves" class="service-img" 
+                    style="width: 100%; height: auto; object-fit: cover;">
+                <div class="p-3">
+                    <h5>Loose Waves</h5>
+                    <p>Loose waves give a relaxed and effortless look.</p>
+                    <button class="btn btn-primary" onclick="showTip('waves')">Show Tips</button>
+                    <div id="waves" class="tips" style="display:none; margin-top: 10px;">
+                        <ul style="text-align: left;">
+                            <li>Use a heat protectant before styling.</li>
+                            <li>Try using a curling wand for defined waves.</li>
+                            <li>Finish with a light hairspray to hold the style.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hairstyle 3 -->
+        <div class="col-md-4">
+            <div class="tip-card text-center" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://i0.wp.com/www.weddingforward.com/wp-content/uploads/2022/03/pony-tail-hairstyles-for-wedding-elegant-swept-with-curls-barbara.szuksztul.lenarczyk.jpg?fit=1080%2C1350&quality=70&ssl=1" 
+                alt="Loose Waves" class="service-img" 
+                    style="width: 100%; height: auto; object-fit: cover;">
+                <div class="p-3">
+                    <h5>High Ponytail</h5>
+                    <p>A high ponytail is sleek and perfect for any occasion.</p>
+                    <button class="btn btn-primary" onclick="showTip('ponytail')">Show Tips</button>
+                    <div id="ponytail" class="tips" style="display:none;">
+                        <ul>
+                            <li>Use a brush to gather your hair at the crown.</li>
+                            <li>Secure tightly with a strong hair tie.</li>
+                            <li>Wrap a section of hair around the base to hide the tie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Hairstyle Tips. All Rights Reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    function showTip(id) {
+        const tip = document.getElementById(id);
+        if (tip.style.display === "none") {
+            tip.style.display = "block";
+        } else {
+            tip.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

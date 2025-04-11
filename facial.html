@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Treatments Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff7f50; /* Coral color */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #ff6347; /* Darker coral */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ffffff; /* White background for gallery */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .facial {
+            background: #f9f9f9; /* Light grey for facial cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .facial:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .facial img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ff6347; /* Darker coral border */
+        }
+        .cost {
+            font-size: 1.2em;
+            color: #ff6347; /* Coral color for costs */
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff6347; /* Coral */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4500; /* Darker coral */
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff7f50; /* Coral color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .facial {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+    <header>
+        <h1>Facial Treatments Gallery</h1>
+        <p>Explore our range of facial treatments for radiant skin!</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="facial" id="style1">
+                <h2>Classic Facial</h2>
+                <img src="https://www.chesterwellnesscentre.co.uk/wp-content/uploads/2023/08/Classic-Facial-Experience.jpg" alt="Classic Facial">
+                <p>A refreshing treatment that suits all skin types.</p>
+                <div class="cost">RS 800/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="facial" id="style2">
+                <h2>Anti-Aging Facial</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSRbPNAFziqdyC9r3vfj_THJKjNtVFBLBSDA3bOdT2b0AkH7clKHD2K82ZFLqL8gVm-4Y&usqp=CAU" alt="Anti-Aging Facial">
+                <p>Rejuvenates skin and reduces signs of aging.</p>
+                <div class="cost">Rs 1200/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="facial" id="style3">
+                <h2>Brightening Facial</h2>
+                <img src="https://www.o3plus.com/cdn/shop/articles/43.jpg?v=1693210899" alt="Brightening Facial">
+                <p>Achieve a radiant and glowing complexion.</p>
+                <div class="cost">Rs 1000/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="facial" id="style4">
+                <h2>Acne Control Facial</h2>
+                <img src="https://cdn.shopify.com/s/files/1/0621/4375/8541/files/acnedescriptionimage_600x600.jpg?v=1683538975" alt="Acne Control Facial">
+                <p>Targets acne and provides a clearer complexion.</p>
+                <div class="cost">RS 1300/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="facial" id="style5">
+                <h2>Hydrating Facial</h2>
+                <img src="https://www.champagneghost.com/wp-content/uploads/2022/10/what-is-a-hydrating-facial-1.webp" alt="Hydrating Facial">
+                <p>Deep hydration for a soft and supple feel.</p>
+                <div class="cost">Rs 1100/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+        </div>
+        <button id="moreFacials">Show More Facials</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Facial Treatments Gallery. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('moreFacials').addEventListener('click', function() {
+            const facials = [
+                { title: 'Oxygen Facial', img: 'https://essencemedspa.net/storage/elementor/thumbs/How-To-Care-For-Your-Skin-After-An-Oxygen-Facial-scaled-qk8enque63xw7ufru2w1g9bducaxxf2tuz743x33hs.jpeg', desc: 'A rejuvenating treatment with oxygen infusion.', cost: 'RS 1400/-'  },
+                { title: 'Gold Facial', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB3wApOkOZMXq1dS7UVvizjbozENXPYDw8ng&s', desc: 'Luxury treatment for a golden glow.', cost: 'Rs 1600/-' },
+                { title: 'Collagen Facial', img: 'https://orissaspa.com/wp-content/uploads/2024/06/Collagen-Facial-2-Orissa-Spa-1.png', desc: 'Boosts collagen for youthful skin.', cost: 'Rs 1500/-' },
+                { title: 'Detox Facial', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwABalQlv0OGQXb5yQbrzsvsr3a_Oi--olfw&s', desc: 'Detoxifies skin for a fresh look.', cost: 'Rs 1250/-' },
+            ];
+
+            const gallery = document.querySelector('.gallery');
+
+            facials.forEach(facial => {
+                const div = document.createElement('div');
+                div.className = 'facial';
+                div.innerHTML = 
+                    `<h2>${facial.title}</h2>
+                    <img src="${facial.img}" alt="${facial.title}">
+                    <p>${facial.desc}</p>
+                    <div class="cost">${facial.cost}</div>
+                    <button onclick="location.href='${facial.title.toLowerCase().replace(/ /g, '-')}.html'">View Details</button>`;
+                gallery.appendChild(div);
+            });
+        });
+    </script>
+</body>
+</html>

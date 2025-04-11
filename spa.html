@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spa Pedicure Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffeef8; /* Light pink background */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff69b4; /* Pink color for the heading */
+            margin-bottom: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .pedicure-item {
+            border: 2px solid #ff69b4; /* Pink border */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #ffffff; /* White background for items */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        .pedicure-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #ff69b4; /* Pink color for price */
+            margin-top: 10px;
+        }
+        .book-button {
+            background-color: #ff69b4; /* Pink background for button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        .book-button:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffccdd;
+            color: #333;
+        }
+        header h1 {
+            font-size: 2em;
+            color: #d14778;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #a64d79;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .rating {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #ff69b4; /* Pink color for stars */
+            cursor: pointer;
+        }
+        .star {
+            display: inline-block;
+            color: #d3d3d3; /* Light gray for inactive stars */
+        }
+        .star:hover,
+        .star.selected {
+            color: #ff69b4; /* Pink color when hovered or selected */
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+    <header>
+        <h1>Spa Pedicure Services</h1>
+        <p>Indulge in our luxurious spa pedicure treatments designed to pamper your feet and rejuvenate your spirit.</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Why Choose Our Spa Pedicure?</h2>
+            <p>Our spa pedicure offers a rejuvenating experience that not only beautifies your feet but also promotes relaxation. With skilled technicians and high-quality products, we ensure your comfort and satisfaction, making every session a delightful escape.</p>
+        </section>
+        
+        <div class="container">
+            <h1>Spa Pedicure</h1>
+
+            <div class="pedicure-item">
+                <img src="https://media.istockphoto.com/id/1308841863/photo/beautician-washing-woman-feet-for-pedicure-treatment.jpg?s=612x612&w=0&k=20&c=cb1QTa5SoYRI_5zkpak1OAsVUDRn-uITEwDhFBELjPo=" alt="Spa Pedicure">
+                <h2>Spa Pedicure</h2>
+                <p>Indulge in our luxurious Spa Pedicure, featuring a refreshing foot soak, a gentle scrub, and a relaxing massage. Complete with nail shaping, cuticle care, and a polish of your choice, this treatment is designed to pamper your feet and rejuvenate your spirit.</p>
+                <div class="price">Rs 500/-</div>
+                
+                <!-- Rating System -->
+                <div class="rating">
+                    <span class="star selected">&#9733;</span>
+                    <span class="star selected">&#9733;</span>
+                    <span class="star selected">&#9733;</span>
+                    <span class="star selected">&#9733;</span>
+                    <span class="star" onclick="rateService(5)">&#9733;</span>
+                </div>
+
+                <button class="book-button" onclick="bookService('Spa Pedicure')">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function bookService(serviceName) {
+            alert("You have booked a " + serviceName + "!");
+            window.location.href = "receipt.html";
+        }
+
+        function rateService(rating) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                star.classList.remove('selected');
+                if (index < rating) {
+                    star.classList.add('selected');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

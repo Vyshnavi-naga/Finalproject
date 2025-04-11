@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairstyles Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff7f50; /* Coral color */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #ff6347; /* Darker coral */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ffffff; /* White background for gallery */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .hairstyle {
+            background: #f9f9f9; /* Light grey for hairstyle cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .hairstyle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .hairstyle img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ff6347; /* Darker coral border */
+        }
+        .cost {
+            font-size: 1.2em;
+            color: #ff6347; /* Coral color for costs */
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff6347; /* Coral */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4500; /* Darker coral */
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff7f50; /* Coral color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .hairstyle {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+    <header>
+        <h1>Hairstyles Gallery</h1>
+        <p>Explore various hairstyles and find your next look!</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="hairstyle" id="style1">
+                <h2>Classic Bob</h2>
+                <img src="https://www.fabmood.com/inspiration/wp-content/uploads/2024/01/bob-haircut-styles.jpg" alt="Classic Bob">
+                <p>A timeless look that suits various face shapes.</p>
+                <div class="cost">RS 700/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="hairstyle" id="style2">
+                <h2>Pixie Cut</h2>
+                <img src="https://www.fabmood.com/wp-content/uploads/2024/08/682525.jpg" alt="Pixie Cut">
+                <p>A short and chic style that's easy to maintain.</p>
+                <div class="cost">Rs 1000/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="hairstyle" id="style3">
+                <h2>Long Waves</h2>
+                <img src="https://www.shutterstock.com/image-photo/portrait-beautiful-girl-luxurious-curly-260nw-2250115561.jpg" alt="Long Waves">
+                <p>Beautiful, flowing waves for a glamorous look.</p>
+                <div class="cost">Rs 1100/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="hairstyle" id="style4">
+                <h2>Messy Bun</h2>
+                <img src="https://cdn0.weddingwire.in/article/1166/original/1280/jpg/66611-messy-bun-ritikahairstylist-3.jpeg" alt="Messy Bun">
+                <p>A casual and stylish updo for any occasion.</p>
+                <div class="cost">RS 1500/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="hairstyle" id="style5">
+                <h2>Undercut</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvQzvx7v0q6GcQik1QTb55GhapUtiL1MaPMg&s" alt="Undercut">
+                <p>A bold and trendy look for the adventurous.</p>
+                <div class="cost">Rs 750/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+        </div>
+        <button id="moreStyles">Show More Styles</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hairstyle Gallery. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('moreStyles').addEventListener('click', function() {
+            const styles = [
+                { title: 'Braided Updo', img: 'https://i.pinimg.com/736x/ae/ec/16/aeec16a6ae4357627c95b3a0215f9508.jpg', desc: 'An elegant choice for formal events.', cost: 'RS 900/-'  },
+                { title: 'Straight and Sleek', img: 'https://vvstudio-media-dump.s3.ap-south-1.amazonaws.com/straightening_1_3cba1fb2f4.png', desc: 'A classic, polished look for everyday.', cost: 'Rs 1200/-' },
+                { title: 'Curly Locks', img: 'https://www.wedabout.com/blog/wp-content/uploads/2023/05/open-braided-crown-south-indian-bridal-hairstyle.png', desc: 'Bouncy curls that add volume and fun.', cost: 'Rs 1300/-' },
+                { title: 'Half Up, Half Down', img: 'https://i.pinimg.com/736x/db/35/13/db3513884f3b1ab22e8c231f69646c56.jpg', desc: 'A versatile style for any occasion.', cost: 'Rs 999/-' },
+            ];
+            
+
+            const gallery = document.querySelector('.gallery');
+
+            
+            styles.forEach(style => {
+                const div = document.createElement('div');
+                div.className = 'hairstyle';
+                div.innerHTML = `
+                    <h2>${style.title}</h2>
+                    <img src="${style.img}" alt="${style.title}">
+                    <p>${style.desc}</p>
+                    <div class="cost">${style.cost}</div>
+                    <button onclick="location.href='${style.title.toLowerCase().replace(/ /g, '-')}.html'">View Details</button>
+                `;
+                gallery.appendChild(div);
+            });
+        });
+    </script>
+</body>
+</html>

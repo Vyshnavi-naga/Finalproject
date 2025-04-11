@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Essentials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .makeup-type {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 20%; /* Reduced size */
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d63384;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c82470;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+
+    <header>
+        <h1>Makeup Essentials</h1>
+        <nav>
+            <ul>
+                <li><a href="#types">Types of Makeup</a></li>
+                <li><a href="#tips">Makeup Tips</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="types">
+        <h2>Types of Makeup</h2>
+        <div class="makeup-type">
+            <h3>Foundation</h3>
+            <p>Foundation is used to create an even skin tone.</p>
+        </div>
+        <div class="makeup-type">
+            <h3>Eyeshadow</h3>
+            <p>Eyeshadow adds color and depth to the eyelids.</p>
+        </div>
+        <div class="makeup-type">
+            <h3>Lipstick</h3>
+            <p>Lipstick enhances the lips with color and shine.</p>
+        </div>
+        <div class="makeup-type">
+            <h3>Blush</h3>
+            <p>Blush adds color to the cheeks for a healthy look.</p>
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>Makeup Tips</h2>
+        <ul>
+            <li>Always apply moisturizer before foundation.</li>
+            <li>Use primer for a smooth base.</li>
+            <li>Blend eyeshadow well for a seamless look.</li>
+            <li>Choose lipstick shades that complement your skin tone.</li>
+            <li>Don't forget to set your makeup with powder.</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Makeup Gallery</h2>
+        <div class="gallery">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/u/5/s/medium-beauty-parlour-bridal-mackup-wall-poster-set-of-6-hd-original-imah2q85fzgzhpzw.jpeg?q=20&crop=falseeNYie61jLR8oH0DtUOo4u9tvSahxs5EYFBINOLIS4STwYkU74ZL+EVmz5QEiQB1qbH1TaysELCY4+vFb3xcuJtC9uard3WjYdLYG4A0KToJT5DrxTpZvAvEGP5e9UW2SCR7V0vIyBcthh7VQtcslG3DoafwX25ZPyx15E+JcpgtJ8K9IpraPFMqcFy9JSajat4qN7vtQ4EasajmvbmRQ/nj2olGmNnWgKE1DKFtGb2FTZNwqpIEmOlUbXNa3hwRcBMAgIfT04+OKlafwa3gz1LKL20yEtMCrQzbhxHUg969ynOT5d5m/VLMAkCT0k0t0/OdrDWj+BBMwZIA7djW+nC1dxX8x/Lg7gqmJPaVpWGJfRzjpcvIW3BzuIKIwEAHgkdDWz3R5y2hCGOnUT9QOh4pbpealjG3hGZ90cE8/cdBU2i2zd8zI8lieR1LHpHU0NcctGptMc4+SwLyJCmCwgj2qTFa3dDcAj6j/elXhnHY27nQtvkqxIDL25Heps/MC7Ea0Ek/h3STH1HWk1wtejfL4S6hoqOvErHSD0PY1Ha0i5528ZDQFjkd/zqTJvbboXfCcQZnkiTWljKZmuFTvVesccAexpf7SMT0Dt6blJcv/r0AcTuK889qHycTKFkIrgqvJG0QT1J5pm+bcKKfKY7zCkFT8TzWzZzyyeU8geoxwO9E7phLoULdy2vKdyrsXbIHIkDiIr27pTkA3Lj3DunbPp5po12CHVGZWIG769PtWptFbhR3RONwYtP2ovNvo7Uuxao9TBbbHaByF4B+p7Vrq2WthVQEBn5uFew9iPvQuu63ttsMdmk8XG/ePQRUWk4xRh+kgOW7Ay33o54tWsx2w7CAsoFFz0XQYUjnaf7Upy8G1bvL5blh1ZTz36UbrWt2XCoysr2/wAEDgr05pdpudZtEXbgMz3BIqmV0Kb0NvajZdvQkR9I5rS3lsSdvECt8rWsa6SVtwxMzEUINVVjt2RHf3rfpifYfc1FgiwY7E0HmaQit5u7dImjv8jtXcfcl0qSOk9/g0v0/Sb6D99Zrm89FCxLoP0O61wFYgdppVq+Wu5rLLz2JH9atTYjWbYcwD7UnztMS84Y8Gh4qyuzHlIqOOu1opzjGiNc0xbYVgeaFwjzXoT+y085/qybIeOKCuX6kzW5pTfvUXgc7CbuRQ3n0M1ytJpilIW7O0adrFrIH6ok94IIiInr80UbKsOQD9qysrzdyj0KWNorOZ4TJBFm89tTJI6gz89KU6TYVWd2XctolCOPxjpIPUGDXlZW4mIb8X0F6Drduwl3zE9TbisAER+7HbmjMHWbr2f0ewgRip54/a5kGeOte1lI+hX7JPDuh3fULzkDjoe8dePrNK8eyFzJuncEJCnn1bT354rKymqU1p0vWyw6VpqXXOR2IfYp7NuIJj8qV2cfzN4uehxc2Sp4YNESB81lZSsTRsU1pBe05zfFu3cYKgLSSYBE9APg1JhYl97m23fb1A7iSeY68GsrKxSglbem+ZoN+VQ3m2s0BNx4+vFe5/hMK243AxUTtg9vqetZWUVJL0ZrYTl37JxjfKDdIXbAA9PtSTNuFbqZoiGtwF7zXlZWyujk2mRJeXMvp5ielV528deaOz/nexdpx1temRJI5Ef8AqsrK7XuBP2RE4wffbX0QAQR/ECmWmPYvXfLt2xO0ySP+e9eVlchbeMA8TYa4htXCSQSQVHSvbnihUQbF57SKyspngnjK5Wx2D39RuZC+pojoB0rd7uzbPJrKyltZRjXQ+wNBXKTe0xHHMc1UL1ry7jIOgYj8jWVlehwLpHm8r7BdQ96Q5L1lZVAnQcNW+6vaytNP/9k=" alt="Makeup look 1">
+            <img src="https://www.wedium.com/puri/wp-content/uploads/2023/08/Bridal-Eye-Makeup-Look-1.jpg" alt="Makeup look 2">
+            <img src="https://www.vedawellness.org/wp-content/uploads/2019/01/threding.jpg" alt="Makeup look 3">
+        </div>
+        <button id="showMore">Show More</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Makeup Essentials. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('showMore').addEventListener('click', function() {
+            const newImages = [
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSc-YNuDV3hkBFUptiCokUdIx-HMUjqgIKLvtlmRgATMI3_1c0dehrN21BnZQAi0qIgk&usqp=CAU',
+                'https://limelitesalonandspa.com/wp-content/uploads/2023/01/Get-Your-Glam-On-With-The-Perfect-Bridal-Makeup.jpg',
+                'https://images.squarespace-cdn.com/content/v1/63cec33f45d2c62a71963d68/1675190472917-QCPLZOYT72PVS7QYADZX/dbed4fb58bfe1d8d335cdcf064656496.jpg'
+            ];
+            const gallery = document.querySelector('.gallery');
+            
+            newImages.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = 'Makeup look';
+                gallery.appendChild(img);
+            });
+            
+            this.style.display = 'none'; // Hide button after showing more images
+        });
+    </script>
+</body>
+</html>
+

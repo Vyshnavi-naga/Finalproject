@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Makeup Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8; /* Light blue-grey background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8e44ad; /* Purple color */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #732d91; /* Darker purple */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ffffff; /* White background for gallery */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .makeup-style {
+            background: #f9f9f9; /* Light grey for style cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .makeup-style:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .makeup-style img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #732d91; /* Dark purple border */
+        }
+        .cost {
+            font-size: 1.2em;
+            color: #8e44ad; /* Purple color for costs */
+            margin-top: 10px;
+        }
+        button {
+            background-color: #8e44ad; /* Purple */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #732d91; /* Darker purple */
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #8e44ad; /* Purple color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .makeup-style {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+    <header>
+        <h1>Eye Makeup Gallery</h1>
+        <p>Explore various eye makeup styles to find your perfect look!</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="makeup-style" id="style1">
+                <h2>Natural Look</h2>
+                <img src="https://preview.redd.it/u0ogoic1q9341.jpg?width=640&crop=smart&auto=webp&s=7f5c9654503ccf72d0bcb9e3b84612761253a153" alt="Natural Look">
+                <p>Soft and subtle for an everyday natural look.</p>
+                <div class="cost">RS 500/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="makeup-style" id="style2">
+                <h2>Smokey Eyes</h2>
+                <img src="https://i.ytimg.com/vi/JOL0hKCcu1Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCaVxNveJKVBgR7YJELUQZ1n7Vjlg" alt="Smokey Eyes">
+                <p>A bold, dramatic look perfect for evenings.</p>
+                <div class="cost">Rs 800/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="makeup-style" id="style3">
+                <h2>Cat Eye</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbhrZYrdTddxdIwoYq_PNgoe-f-Yl6GHj3Q&s" alt="Cat Eye">
+                <p>Sharp and defined, adding elegance to your look.</p>
+                <div class="cost">Rs 600/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+            <div class="makeup-style" id="style4">
+                <h2>Glitter Glam</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBT1NKrezGM_5NSDsAawUR75gixVcEIouhzWnySNdNQmz_5ulr8jqx0jowTG4IGo18RmM&usqp=CAU" alt="Glitter Glam">
+                <p>Shimmery and glamorous for special occasions.</p>
+                <div class="cost">RS 1000/-</div>
+                <button onclick="location.href='receipt.html'">Book Now</button>
+            </div>
+        </div>
+        <button id="moreStyles">Show More Styles</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eye Makeup Gallery. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('moreStyles').addEventListener('click', function() {
+            const styles = [
+                { title: 'Cut Crease', img: 'https://satthwa.com/cdn/shop/articles/cut-crease-eyeshadow-tutorial-india_1200x1200.jpg?v=1542883262', desc: 'Defined and bold, perfect for night outs.', cost: 'RS 1200/-' },
+                { title: 'Bold Eyeliner', img: 'https://images.herzindagi.info/image/2022/Feb/bold-eye-looks.jpg', desc: 'Eye-catching lines for a standout look.', cost: 'Rs 700/-' },
+                { title: 'Halo Eye', img: 'data:image/jpeg;base64,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', desc: 'Brighten up the center for a stunning effect.', cost: 'Rs 1100/-' },
+                { title: 'Neon Pop', img: 'data:image/jpeg;base64,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', desc: 'Vibrant and fun for the adventurous.', cost: 'Rs 950/-' },
+            ];
+
+            const gallery = document.querySelector('.gallery');
+
+            styles.forEach(style => {
+                const div = document.createElement('div');
+                div.className = 'makeup-style';
+                div.innerHTML = `
+                    <h2>${style.title}</h2>
+                    <img src="${style.img}" alt="${style.title}">
+                    <p>${style.desc}</p>
+                    <div class="cost">${style.cost}</div>
+                    <button onclick="location.href='${style.title.toLowerCase().replace(/ /g, '-')}.html'">View Details</button>
+                `;
+                gallery.appendChild(div);
+            });
+        });
+    </script>
+</body>
+</html>

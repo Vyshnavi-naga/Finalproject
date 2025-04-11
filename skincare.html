@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skin Care</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #fceff9, #e6f7ff);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff69b4, #ff1493);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #d5006d;
+      border-bottom: 2px solid #ff69b4;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #ff1493;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 1.05em;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    li:before {
+      content: "✔";
+      color: #ff69b4;
+      position: absolute;
+      left: 0;
+    }
+
+    .important {
+      color: #ff4500;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #d5006d;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .button {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back Button in Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the button */
+        .corner-button {
+            position: fixed; /* Fix the button in the corner */
+            top: 20px;       /* Distance from the top */
+            right: 20px;     /* Distance from the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .corner-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Button in the corner -->
+    <button class="corner-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        // Function to redirect to a specific page
+        function goBack() {
+            // Replace 'your-page-url.html' with the URL you want to redirect to
+            window.location.href = "home.html"; // Change this URL
+        }
+    </script>
+
+</body>
+</html>
+  <header>
+    <h1>Skin Care</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to the Skin Care Page</h2>
+      <p>Welcome to the Skin Care page! Here you will find all information related to skincare products and tips. Taking care of your skin is essential for maintaining its health and beauty.</p>
+      <a href="#" class="button">Get Started</a>
+    </section>
+
+    <section>
+      <h2>Understanding Your Skin Type</h2>
+      <p>Before diving into skincare routines, it's important to understand your skin type. Here are the primary skin types:</p>
+      <ul>
+        <li><strong>Normal:</strong> Balanced, neither oily nor dry.</li>
+        <li><strong>Oily:</strong> Shiny, enlarged pores, and prone to acne.</li>
+        <li><strong>Dry:</strong> Flaky, rough, and may feel tight.</li>
+        <li><strong>Combination:</strong> Oily in some areas (usually T-zone) and dry in others.</li>
+        <li><strong>Sensitive:</strong> Easily irritated, may react to products.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Essential Skin Care Products</h2>
+      <p>There are several essential products that should be included in any skin care routine:</p>
+      <ul>
+        <li><strong>Cleansers:</strong> Remove dirt, makeup, and impurities.</li>
+        <li><strong>Toners:</strong> Balance skin's pH and remove any leftover cleanser.</li>
+        <li><strong>Moisturizers:</strong> Hydrate and lock in moisture.</li>
+        <li><strong>Sunscreen:</strong> Protects skin from harmful UV rays.</li>
+        <li><strong>Exfoliants:</strong> Remove dead skin cells and promote cell turnover.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Creating a Skincare Routine</h2>
+      <p>A proper skincare routine consists of several steps:</p>
+      <h3>Morning Routine</h3>
+      <ol>
+        <li>Cleanse your face with a gentle cleanser.</li>
+        <li>Apply toner to balance your skin's pH.</li>
+        <li>Use a serum that targets your specific skin concerns (e.g., acne, wrinkles).</li>
+        <li>Moisturize your skin to keep it hydrated.</li>
+        <li>Apply sunscreen to protect against UV damage.</li>
+      </ol>
+      <h3>Evening Routine</h3>
+      <ol>
+        <li>Remove makeup with a makeup remover or cleansing oil.</li>
+        <li>Cleanse your face thoroughly.</li>
+        <li>Exfoliate 2-3 times a week for better skin texture.</li>
+        <li>Apply a nourishing serum or treatment.</li>
+        <li>Moisturize to keep your skin hydrated overnight.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Important Ingredients to Look For</h2>
+      <p>Knowing what to look for in skincare products can help you choose the right ones for your skin type:</p>
+      <ul>
+        <li><strong>Hyaluronic Acid:</strong> A powerful hydrator that retains moisture.</li>
+        <li><strong>Retinol:</strong> Helps with fine lines, wrinkles, and acne.</li>
+        <li><strong>Vitamin C:</strong> An antioxidant that brightens skin and reduces dark spots.</li>
+        <li><strong>Niacinamide:</strong> Reduces inflammation and improves skin texture.</li>
+        <li><strong>Salicylic Acid:</strong> Exfoliates and helps clear acne.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common Skin Concerns</h2>
+      <p>Many people have specific skin concerns that can be addressed with the right products:</p>
+      <ul>
+        <li><strong>Acne:</strong> Use products with salicylic acid or benzoyl peroxide.</li>
+        <li><strong>Dryness:</strong> Look for rich moisturizers and hydrating serums.</li>
+        <li><strong>Dark Spots:</strong> Use vitamin C and exfoliating ingredients.</li>
+        <li><strong>Wrinkles:</strong> Incorporate retinol and peptides into your routine.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skin Care Tips</h2>
+      <p>Here are some additional tips to keep your skin looking its best:</p>
+      <ul>
+        <li>Stay hydrated by drinking plenty of water.</li>
+        <li>Get enough sleep to allow your skin to repair itself.</li>
+        <li>Eat a balanced diet rich in fruits and vegetables.</li>
+        <li>Avoid touching your face to reduce the risk of transferring bacteria.</li>
+        <li class="important">Always patch-test new products before applying them all over your face.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>Taking care of your skin is a lifelong commitment. Understanding your skin type and choosing the right products can lead to healthy, glowing skin. Remember that consistency is key to seeing results.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Skin Care. All rights reserved.</p>
+  </footer>
+</body>
+</html>

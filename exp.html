@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlor Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 40px;
+        }
+        .service-card {
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer; /* Change cursor to pointer for better UX */
+        }
+        .service-card h5 {
+            color: #ff6f61; /* Coral color */
+        }
+        .service-card p {
+            color: #6c757d; /* Grey text */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Our Beauty Services</h1>
+    <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <a href="https://www.google.com/search?q=loreal+makeup+products&sca_esv=b42237714339f3fb&rlz=1C1VDKB_en-GBIN1107IN1107&biw=1536&bih=730&tbm=shop&sxsrf=ADLYWILfiUlm-w7thfka0A1v2yc-OtGKsw%3A1730263314906&ei=ErkhZ5TYNv3i2roP-uDbkQQ&oq=lor+makeup+products&gs_lp=Egtwcm9kdWN0cy1jYyITbG9yIG1ha2V1cCBwcm9kdWN0cyoCCAAyBhAAGAcYHkimKFC9AlipGHABeACQAQCYAdcBoAH4C6oBBTAuNi4yuAEByAEA-AEBmAIGoALrB8ICBBAjGCfCAgUQABiABMICBhAAGAgYHsICBxAAGIAEGA3CAgoQABiABBjWBRgNwgIIEAAYBxgIGB7CAgsQABjWBRgNGB4YD8ICChAAGIAEGEMYigWYAwCIBgGSBwUxLjMuMqAHtzU&sclient=products-cc" target="_blank"> <!-- Link to Google -->
+                    <img src="https://ambition4climate.com/wp-content/uploads/2021/04/Loreal.png" alt="Facial" class="service-img">
+                </a>
+                <div class="p-3">
+                    <h5>LOREAL</h5>
+                    <p>L'Oréal is a leading global beauty company that offers a diverse range of skincare, haircare, makeup, and fragrance products.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <a href="https://www.google.com/search?q=lakme+makeup+products&sca_esv=b42237714339f3fb&rlz=1C1VDKB_en-GBIN1107IN1107&biw=1536&bih=730&tbm=shop&sxsrf=ADLYWIIf4S_pvyXs3sUvhjrTP9_xJMt6Cw%3A1730263072405&ei=ILghZ9H9F9Cv0-kP3oS6kQU&oq=la+makeup+products&gs_lp=Egtwcm9kdWN0cy1jYyISbGEgbWFrZXVwIHByb2R1Y3RzKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yCBAAGAUYBxgeMggQABgFGAcYHkjaIVC8B1jOEnAAeACQAQGYAdcBoAHzCKoBBTAuMy4zuAEByAEA-AEBmAIEoALyBcICBBAjGCfCAgUQABiABMICBhAAGAgYHsICBxAAGIAEGA3CAgoQABiABBjWBRgNmAMAiAYBkgcFMC4zLjGgB8kk&sclient=products-cc" target="_blank"> <!-- Link to Google -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZmHs9-Q6iYkirFACXt1-hBHAOzhaE5VD73A&s" alt="Haircut" class="service-img">
+                </a>
+                <div class="p-3">
+                    <h5>LAKME</h5>
+                    <p>Lakmé is a popular Indian cosmetics brand known for its wide range of makeup and skincare products tailored for Indian skin tones.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+            <div class="service-card">
+                <a href="https://www.google.com/search?sca_esv=b42237714339f3fb&rlz=1C1VDKB_en-GBIN1107IN1107&sxsrf=ADLYWIKNzI00kghfd2rNGfKkOBhBpGfUqA:1730263069220&q=mac+makeup+products&tbm=shop&source=lnms&fbs=AEQNm0CvspUPonaF8UH5s_LBD3JPX4RSeMPt9v8oIaeGMh2T2PRrsfVPlQRxSTpQ4UUI6wdh60Bm53mxaBz4ng0b7PV-YGWOXPAK2E9Fu6maaEHunHtoSjVk3b-j4DUpo16Oa_LVdETsNu_VGLBMmFaNxor7f38b2SzeEgh2In7gbY1o1jZb0CIcwnVDOcoRa1v5_LKsm1fEDd6pfd2A3dGDUASPo0aaxA&ved=1t:200715&ictx=111&biw=1536&bih=730&dpr=1.25" target="_blank"> <!-- Link to Google -->
+                    <img src="https://logodix.com/logo/480481.jpg" alt="Manicure" class="service-img">
+                </a>
+                <div class="p-3">
+                    <h5>MAC</h5>
+                    <p>"Makeup Art Cosmetics," a professional cosmetics brand known for high-quality makeup products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Beauty Parlor. All Rights Reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Add any JavaScript functionality here if needed
+    console.log("Welcome to our Beauty Parlor!");
+</script>
+</body>
+</html>
